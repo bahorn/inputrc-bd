@@ -59,12 +59,20 @@ Another #BGGP6 download!!!!!! Hi @binarygolf https://binary.golf/6
 ## Tricks
 
 * Crashing GNU Readline with an infinite recursion (not a bug that is
-  exploitable sadly/thankfully).
+  exploitable sadly/thankfully). The idea here was `$include .inputrc` would
+  recursively include itself, which causes the stack frame to eventually hit a
+  guard page.
 * Replacing enter with a set of commands to be ran by bash.
+  The echo/curl/cp commands achieve BGGP{4,5,6} challeges in a easy if boring
+  way.
 * Changing the keymap and reloading to trigger the crash with commands ran
   by bash. This assumes you keymap is not `vi` initially, which should be the
-  case on ubuntu 24.04.
-* not including an unneeded `$endif`, the format lets you skip it.
+  case on ubuntu 24.04. The format supports conditionals but you are limited to
+  only valid variables (which can only be certain values) or a few other
+  conditions. I decides to use keymap as it seemed to be the shortest one I
+  could set (check `bind -V` to see the other options).
+* not including an unneeded `$endif`, the format lets you skip it so we can save
+  a few bytes here.
 * `truncate -s -1` to save a newline.
 
 ## Notes
@@ -89,4 +97,5 @@ on the weirder *NIXs.
 
 Only found out about this file format yesterday (2025-11-28) when trying to do
 research on what randon weird files my box uses.
-Still wanna find something that can do cool stuff without needing to shell out.
+Was trying to hunt for other formats that can do interesting things without
+shelling out (failed here though).
