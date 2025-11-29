@@ -1,4 +1,4 @@
-# `.inputrc` for BGGP{3,4,5,6} (128 bytes) (WIP)
+# `.inputrc` for BGGP{3,4,5,6} (126 bytes) (WIP)
 
 If you are like me you have probably never heard of a `inputrc`.
 Its a configuration format for GNU readline, and lets you setup keybindings and
