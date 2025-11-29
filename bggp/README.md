@@ -1,4 +1,4 @@
-# `.inputrc` for BGGP{3,4,5,6} (139 bytes) (WIP)
+# `.inputrc` for BGGP{3,4,5,6} (136 bytes) (WIP)
 
 If you are like me you have probably never heard of a `inputrc`.
 Its a configuration format for GNU readline, and lets you setup keybindings and
@@ -12,6 +12,9 @@ Run this with:
 cp inputrc .inputrc
 HOME=`pwd` bash
 ```
+
+This assumes you are in `$HOME` and the `.inputrc` is in `$HOME` to save space
+on paths.
 
 Press enter once and the entry should do its magic:
 * echo 6

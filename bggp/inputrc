@@ -1,4 +1,4 @@
-C-m:"\necho 6;curl -L binary.golf/6/6;cp ~/.inputrc 6;bind 'set keymap vi';bind -f~/.inputrc\n"
+C-m:"\necho 6;curl -L binary.golf/6/6;cp ~/.inputrc 6;bind 'set keymap vi';bind -f.inputrc\n"
 $if keymap == vi
-$include ./inputrc
+$include .inputrc
 $endif
