@@ -1,9 +1,31 @@
-# `.inputrc` for BGGP{3,4,5,6} (126 bytes) (WIP)
+# `.inputrc` for BGGP{3,4,5,6} (126 bytes)
 
 If you are like me you have probably never heard of a `inputrc`.
 Its a configuration format for GNU readline, and lets you setup keybindings and
 change line editing behaviour.
 Lots of tools use it, including bash (which this entry focuses on).
+
+## Entry
+
+Raw (beware of a stray newline):
+```
+C-m:"\necho 6;curl -L binary.golf/6/6;cp .inputrc 6;bind 'set keymap vi';bind -f.inputrc\n"
+$if keymap == vi
+$include .inputrc
+```
+
+Base64:
+```
+Qy1tOiJcbmVjaG8gNjtjdXJsIC1MIGJpbmFyeS5nb2xmLzYvNjtjcCAuaW5wdXRyYyA2O2JpbmQgJ3NldCBrZXltYXAgdmknO2JpbmQgLWYuaW5wdXRyY1xuIgokaWYga2V5bWFwID09IHZpCiRpbmNsdWRlIC5pbnB1dHJj
+```
+
+SHA256:
+```
+d679bc511e153a2b8aba86655ed3d9c0b63dd7ba3929c16ccd78bdf74e432a5f
+```
+
+Tested on a Ubuntu 24.04 box with bash 5.2.21, readline 8.2-4build1 (according
+to apt).
 
 ## Usage
 
