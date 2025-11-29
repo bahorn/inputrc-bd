@@ -1,4 +1,4 @@
-# `.inputrc` for BGGP{3,4,5,6} (136 bytes) (WIP)
+# `.inputrc` for BGGP{3,4,5,6} (128 bytes) (WIP)
 
 If you are like me you have probably never heard of a `inputrc`.
 Its a configuration format for GNU readline, and lets you setup keybindings and
@@ -42,6 +42,8 @@ Another #BGGP6 download!!!!!! Hi @binarygolf https://binary.golf/6
 * Changing the keymap and reloading to trigger the crash with commands ran
   by bash. This assumes you keymap is not `vi` initially, which should be the
   case on ubuntu 24.04.
+* not including an unneeded `$endif`, the format lets you skip it.
+* `truncate -s -1` to save a newline.
 
 ## Notes
 
