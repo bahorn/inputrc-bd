@@ -22,6 +22,8 @@ If you type something like `"""` into bash for the first command this will leak
 what its trying to do when you press enter.
 Not really an obvious way to fix that however.
 
+This also was used as the basis for a [BGGP6 entry](./bggp).
+
 ## Usage
 
 Modify `payload.sh` to do what you want, then just run `make` and you'll have a
