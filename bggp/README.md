@@ -1,4 +1,4 @@
-# `.inputrc` for BGGP{3,4,5,6} (155 bytes) (WIP)
+# `.inputrc` for BGGP{3,4,5,6} (139 bytes) (WIP)
 
 If you are like me you have probably never heard of a `inputrc`.
 Its a configuration format for GNU readline, and lets you setup keybindings and
@@ -36,15 +36,16 @@ Another #BGGP6 download!!!!!! Hi @binarygolf https://binary.golf/6
 * Crashing GNU Readline with an infinite recursion (not a bug that is
   exploitable sadly/thankfully).
 * Replacing enter with a set of commands to be ran by bash.
-* Changing the editing mode and reloading to trigger the crash with commands ran
-  by bash.
+* Changing the keymap and reloading to trigger the crash with commands ran
+  by bash. This assumes you keymap is not `vi` initially, which should be the
+  case on ubuntu 24.04.
 
 ## Notes
 
 I thought `inputrc`s made for a kinda interesting backdoor approach but I've
 never really seen it documented.
 I do think some other people are aware of it though, mainly as there was a very
-tiny reference to checking them for forensics reasons in some slides from a
+tiny reference to checking them for forensics reasons in a
 [presentation by the crowdstrike guys in 2016](https://papers.put.as/papers/macosx/2016/exp-r04_hacking_exposed_the_mac_attack.pdf)
 (slide 25).
 
