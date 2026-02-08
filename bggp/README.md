@@ -91,7 +91,7 @@ Slightly noisy so maybe alias tricks are still the better approach.
 There was a kinda cool [CVE from 2022 in `linux-utils`](https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w%40ws.net.home/T/#u)
 , where they used the INPUTRC environment variable with SUID binaries to leak
 file contents.
-Doesn't expose too much, but cool idea.
+Doesn't expose too much, but cool idea. (wait, actually found the [real writeup](https://blog.trailofbits.com/2023/02/16/suid-logic-bug-linux-readline/) and it leaks SSH keys. awesome bug)
 Would not be suprised if there are variants of that one around still, especially
 on the weirder *NIXs.
 
